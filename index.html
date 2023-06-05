@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lav Kumar | Official</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="Images/Lav1 (3).png">
+        <ul>
+            <li><a class="nav-link active" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="home" id="home">
+        <div class="introDiv">
+            Hi, I'm <h3>Lav</h3>
+            <!-- <h3>Hi, I'm <p>Lav</p></h3> -->
+            <p>And I'm a Web Developer</p>
+        </div>
+        <img src="Images/myImageShort.png">
+    </div>
+
+    <div class="about" id="about">
+        <img src="Images/myImage.png">
+        <div class="aboutContent">
+            <h1>About Me</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam facilis fugiat in, adipisci eveniet
+                nostrum quis incidunt nobis id quidem aperiam explicabo temporibus aspernatur labore, natus est
+                architecto omnis ipsa?
+            </p>
+            <ul>
+                <li>Skills</li>
+                <li>Experience</li>
+                <li>Education</li>
+            </ul>
+            <ul>
+                <li><span>UI/UX</span><br>Design attractive User Interface</li>
+                <li><span>Web Development</span><br>Design a full fledge web app</li>
+                <li><span>App Development</span><br></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <h1>My Services</h1>
+        <ul>
+            <li>
+                <img src="">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, inventore quaerat.</p>
+            </li>
+            <li>
+                <img src="">
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, inventore quaerat.</p>
+            </li>
+            <li>
+                <img src="">
+                <h3>App Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, inventore quaerat.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <h1>My Work</h1>
+        <ul>
+            <li>
+                <img src="">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, inventore quaerat.</p>
+            </li>
+            <li>
+                <img src="">
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, inventore quaerat.</p>
+            </li>
+            <li>
+                <img src="">
+                <h3>App Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, inventore quaerat.</p>
+            </li>
+        </ul>
+        <button>See More</button>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="leftSection">
+            <h1>Contact Me</h1>
+            <div class="phone">
+                <img src="">
+                <p>lav6853@gmail.com</p>
+            </div>
+            <div class="email">
+                <img src="">
+                <p>+91-7484931782</p>
+            </div>
+            <div class="socialMedia">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+            </div>
+            <button type="submit">Download CV</button>
+        </div>
+
+        <div class="rightSection">
+            <form method="POST">
+                <input type="text" placeholder="Your Name">
+                <input type="email" name="" placeholder="Your Email">
+                <input type="text" name="" placeholder="Your Message">
+                <button type="submit" name="">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with love by Lav Kumar.</p>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                navLinks.forEach(link => link.classList.remove('active'));
+
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
