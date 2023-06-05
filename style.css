@@ -23,8 +23,8 @@ body{
     padding: 0 10px;
 }
 .navbar img{
-    height: 60px;
-    width: 85px;
+    height: 40px;
+    width: 80px;
 }
 ul{
     display: flex;
