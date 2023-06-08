@@ -87,7 +87,6 @@ body{
     /* background-image: url(Images/myImageShort.png); */
     background-position: center;
     background-size: cover;
-    /* border: 1px solid green; */
 }
 .home .introDiv{
     font-size: 50px;
@@ -110,7 +109,6 @@ body{
     display: flex;
     margin: 40px;
     padding-top: 80px;
-    /* border: 1px solid red; */
 }
 .about img{
     height: 250px;
