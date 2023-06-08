@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a581a15898.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="Images/Lav1(3).png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Lav Kumar | Official</title>
@@ -14,23 +15,25 @@
     <div class="navbar">
         <img src="Images/Lav1(3).png">
         <ul>
+            <img id="moonIcon" src="Images/moon-solid.svg">
             <li><a class="nav-link active" href="#home">Home</a></li>
             <li><a class="nav-link" href="#about">About</a></li>
             <li><a class="nav-link" href="#services">Services</a></li>
             <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li><a class="nav-link" href="#contact">Hire Me</a></li>
         </ul>
     </div>
 
     <div class="home" id="home">
         <div class="introDiv">
             Hi, I'm <h3>Lav</h3>
-            <!-- <h3>Hi, I'm <p>Lav</p></h3> -->
-            <p>And I'm a Web Developer</p>
+            <p>And I'm a
+                <span>Web Developer</span>
+            </p>
         </div>
         <img src="Images/myImageShort.png">
     </div>
-
+    
     <div class="about" id="about">
         <img src="Images/myImage.png">
         <div class="aboutContent">
@@ -128,16 +131,31 @@
     <footer>
         <p>Made with love by Lav Kumar.</p>
     </footer>
+   
 
     <script>
+        // for navbar
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
-            link.addEventListener('click', function(event) {
+            link.addEventListener('click', function (event) {
                 navLinks.forEach(link => link.classList.remove('active'));
 
                 this.classList.add('active');
             });
         });
+
+        //for theme toggle
+        var icon = document.getElementById("moonIcon");
+        icon.onclick = function(){
+            document.body.classList.toggle("light-theme");
+            if(document.body.classList.contains("light-theme")){
+                icon.src = "Images/sun-solid.svg";
+            }
+            else{
+                icon.src = "Images/moon-solid.svg";
+            }
+        }
     </script>
 </body>
+
 </html>
