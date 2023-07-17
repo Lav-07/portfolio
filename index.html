@@ -12,9 +12,13 @@
 </head>
 
 <body>
+    <div class="message">
+        <h2>This page is under progress.</h2>
+    </div>
     <div class="navbar">
         <img src="Images/Lav1(3).png">
         <ul>
+            <!-- <button id="hello">Hello</button> -->
             <img id="moonIcon" src="Images/moon-solid.svg">
             <li><a class="nav-link active" href="#home">Home</a></li>
             <li><a class="nav-link" href="#about">About</a></li>
@@ -33,7 +37,7 @@
         </div>
         <img src="Images/myImageShort.png">
     </div>
-    
+
     <div class="about" id="about">
         <img src="Images/myImage.png">
         <div class="aboutContent">
@@ -131,7 +135,7 @@
     <footer>
         <p>Made with love by Lav Kumar.</p>
     </footer>
-   
+
 
     <script>
         // for navbar
@@ -146,15 +150,34 @@
 
         //for theme toggle
         var icon = document.getElementById("moonIcon");
-        icon.onclick = function(){
+        icon.onclick = function () {
             document.body.classList.toggle("light-theme");
-            if(document.body.classList.contains("light-theme")){
+            if (document.body.classList.contains("light-theme")) {
                 icon.src = "Images/sun-solid.svg";
             }
-            else{
+            else {
                 icon.src = "Images/moon-solid.svg";
             }
         }
+
+
+        var cursorButton = document.getElementById("moonIcon");
+        // var cursorButton = document.getElementById('cursor-button');
+        var htmlElement = document.documentElement;
+
+        cursorButton.addEventListener('click', function () {
+            if (htmlElement.classList.contains('default-cursor')) {
+                htmlElement.classList.remove('default-cursor');
+                htmlElement.classList.add('custom-cursor');
+            } else {
+                htmlElement.classList.remove('custom-cursor');
+                htmlElement.classList.add('default-cursor');
+            }
+        });
+
+
+
+
     </script>
 </body>
 
