@@ -36,12 +36,20 @@ body {
     background: var(--primary-color);
     color: var(--secondary-color);
 }
+.message{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background: var(--primary-color);
+    z-index: 1;
+    color: var(--additional-color);
+}
 
 .navbar {
     width: 100vw;
     position: fixed;
     z-index: 1;
-    top: 10px;
+    top: 27px;
     display: flex;
     justify-content: space-between;
     /* justify-content: center; */
